@@ -1,0 +1,199 @@
+
+.App body {
+
+  margin: 9vmin 15vmin;
+  
+
+}
+
+.conteudo{
+  /* background-color: #f6f5f5;Cor de fundo*/
+  float: right;/*propriedade indicando que a Área flutuará a direita*/
+  width: 100%;/*Ocupando 74% da largura total destinada para o corpo*/
+  height: 500px;/*Altura de 494 pixels*/
+  border-top: 1px solid #c4c4c4;
+}
+
+.bg-light {
+
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.form-control {
+
+
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
+  border: 1px solid #000000;
+
+  }
+
+.custom-select{
+
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
+  border-radius: 8px;
+  border: 1px solid #DEDEDE;
+  text-align: left;
+  width:200px;
+  
+}
+
+
+
+.largura-linha{
+
+  width: 205vmin;
+
+}
+
+.col-sm-2{
+  display: flex;
+}
+
+.button-enviar{
+
+
+  display: block;  
+  margin-inline: 40%;
+  width: 250px;
+  height: 50px;
+  background-color: #222C3F;
+  color: white;
+  border-radius: 10px
+  
+}
+
+.comentario{
+
+height: 80px;
+Position:absolute;
+
+}
+
+.button-adicionar{
+
+
+  display: block;  
+  margin-inline: 80%;
+  width: 170px;
+  height: 35px;
+  background-color: #ef6502;
+  color: white;
+  border-radius: 10px
+  
+}
+
+.custom-select{
+  width: 470px;
+}
+
+
+
+
+.idioma-label{
+  margin-right: 0%;
+}
+
+.interesse-label{
+  margin-right: 0%;
+}
+
+.nivel-label{
+  margin-inline: 0%;
+}
+.formacao-label{
+  margin-right: 10%;
+}
+.status-label{
+  margin-inline: 5%;
+}
+.formacao-col-9{
+
+  display: block; 
+  width: 108vmin;
+  margin-inline: 17.1%;
+  
+
+}
+
+.pais-label{
+
+  margin-inline: 8.8%;
+}
+
+.localizacao-opcao{
+
+  margin-inline: 0%;
+}
+
+.escolaridade-opcao{
+
+  margin-inline: 0%;
+}
+
+.status-opcao{
+
+  margin-inline: 0%;
+}
+
+.idiomas-opcao{
+
+  margin-inline: 2%;
+}
+
+.deficiencia-opcao{
+
+  margin-inline: 0%;
+}
+
+.genero-opcao{
+
+  margin-inline: 3%;
+}
+
+.estado-label{
+
+  margin-inline: 11%;
+}
+
+.cidade-label{
+
+  margin-inline: 11%;
+}
+
+
+
+
+.bg-white-resultado{
+
+  margin: 1vmin 2vmin;
+  border: 1px solid #C5C5C5;;
+  color: #000000;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0px 2px 2px #C5C5C5;
+  width: 48vmin;
+  height: 5vmin;
+
+}
+
+.result{
+
+ margin: 1vmin 3vmin;
+ 
+}
+
+.botao-link{
+
+text-decoration: none; 
+color: #474747;
+
+}
+
+.table{
+
+  width: 100%;
+  margin-bottom : .5em;
+  table-layout: fixed;
+  text-align: center;
+       }
