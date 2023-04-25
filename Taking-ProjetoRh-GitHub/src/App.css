@@ -14,11 +14,29 @@
   border-top: 1px solid #c4c4c4;
 }
 
+.primeiraQuebraDeLinha {
+  height: 20px;
+  background:  #222C3F;
+  border:none;
+  box-shadow: 6px 6px 12px;
+  
+}
+
 .bg-light {
 
   border: 2px solid #000000;
   border-radius: 5px;
 }
+
+.textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 25px;
+  border-radius: 5px;
+  border: 1px solid  #DEDEDE;
+  box-shadow: 4px 4px 4px #999;
+ 
+ }
 
 .form-control {
 
@@ -59,7 +77,9 @@
   height: 50px;
   background-color: #222C3F;
   color: white;
-  border-radius: 10px
+  border-radius: 10px;
+  cursor:pointer;
+  transition: all 0.9s;
   
 }
 
@@ -79,7 +99,9 @@ Position:absolute;
   height: 35px;
   background-color: #ef6502;
   color: white;
-  border-radius: 10px
+  border-radius: 10px;
+  cursor:pointer;
+  transition: all 0.9s;
   
 }
 

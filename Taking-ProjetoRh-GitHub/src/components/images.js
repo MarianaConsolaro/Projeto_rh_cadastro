@@ -3,7 +3,7 @@ const Images = () =>{
          <div>
             <center>
             <img src="/logotaking.png" />
-            <hr />
+            <hr className="primeiraQuebraDeLinha"/>
             </center>
          </div>
 

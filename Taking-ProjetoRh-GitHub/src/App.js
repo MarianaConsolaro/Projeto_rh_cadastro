@@ -7,7 +7,8 @@ import Cadastro from './components/Cadastro';
 function App() {
   return (
     <div className="App">          
-        
+    
+
       <Routes>
 
         <Route path = "/" element = {<Cadastro/>} /> 
