@@ -15,7 +15,7 @@ export default function ListagemFiltro(){
                     <div>
     
                     <center>
-                    <h1>Encontre seu currículo</h1>
+                    <h1>Consulta de Currículos</h1>
                     </center>
     
                     <br/>
@@ -77,7 +77,7 @@ export default function ListagemFiltro(){
                   
                   <Label className="col-sm-2.5 col-form-label" for="pais">País</Label>
                   <div className="col-sm-12">
-                  <select className="custom-select localizacao-opcao col-form-label" name="pais">
+                  <select className="custom-select-listagem localizacao-opcao col-form-label" name="pais">
                   <option value="todos">País</option>
                   <option value="brasil">Brasil</option>
                   <option value="USA">USA </option>
@@ -91,7 +91,7 @@ export default function ListagemFiltro(){
 
                 <Label className="col-sm-2.5 col-form-label" for="estado">UF</Label>
                     <div className="col-sm-12">
-                    <select className="custom-select localizacao-opcao col-form-label" name="estado">
+                    <select className="custom-select-listagem localizacao-opcao col-form-label" name="estado">
                     <option value="todos">UF</option>
                     <option value="SP">SP </option>
                     <option value="RJ">RJ </option>
@@ -104,7 +104,7 @@ export default function ListagemFiltro(){
 
                     <Label className="col-sm-2.5 col-form-label" for="cidade">Cidade</Label>
                     <div className="col-sm-12">
-                    <select className="custom-select localizacao-opcao col-form-label" name="cidade">
+                    <select className="custom-select-listagem localizacao-opcao col-form-label" name="cidade">
                     <option value="todos">Cidade</option>
                     <option value="Sao Paulo">São Paulo </option>
                     <option value="Rio de Janeiro">Rio de Janeiro </option>
