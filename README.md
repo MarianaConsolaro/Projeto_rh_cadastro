@@ -35,10 +35,15 @@ cd nome-do-repositorio
 Veja todas as [contribuições](https://github.com/gusgalote/beacademy-devstart-ametista/graphs/contributors)!
 
 https://github.com/MarianaConsolaro
+
 https://github.com/PriscilaCPassos
+
 https://github.com/jcarla
+
 https://github.com/GiseleGCruz
+
 https://github.com/Arileli
+
 https://github.com/nandabrittoo
 
 ## Techs
