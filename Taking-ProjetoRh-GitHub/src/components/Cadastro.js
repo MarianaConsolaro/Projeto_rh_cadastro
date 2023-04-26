@@ -2,6 +2,7 @@ import { Form, Label, Input, FormGroup, FormText, Row, Col } from "reactstrap";
 import { useState } from "react";
 import Images from "./images";
 
+
 export default function Cadastro(){
 
 const [candidato, setCandidato] = useState(
@@ -56,6 +57,14 @@ function handleChange(event){
         setCandidato(candidatoAtualizado)
    
  }
+
+ async function handleSubmit(){
+
+        console.log(candidato);
+
+
+ }
+
  
 return(
 
@@ -81,13 +90,13 @@ return(
                 <br />
                
             
-                <Form>    
+                <Form onSubmit={handleSubmit}>    
                 <Row>
                 <Col>
                         <div className="form-group row">
                             <Label for="firstname" className="col-sm-2.5 col-form-label">Nome </Label>
                             <div className="col-sm-12">
-                            <Input type="text" className="form-control" name="firstname" id="firstname" placeholder="Digite o primeiro nome"
+                            <Input required type="text" className="form-control" name="firstname" id="firstname" placeholder="Digite o primeiro nome"
                                 onChange={handleChange} value={candidato.firstname}/>
                                 
                                 <p></p>
@@ -100,7 +109,7 @@ return(
                          <div className="form-group row">
                             <Label for="lastname" className="col-sm-2.5 col-form-label">Sobrenome </Label>
                              <div className="col-sm-12">
-                            <Input type="text" className="form-control" name="lastname" id="lastname" placeholder="Digite o sobrenome"
+                            <Input required type="text" className="form-control" name="lastname" id="lastname" placeholder="Digite o sobrenome"
                                 onChange={handleChange} value={candidato.lastname}/>
                             </div>
                         </div>
@@ -112,9 +121,9 @@ return(
                 <Row>
                 <Col>  
                         <div className="form-group row">
-                             <Label for="identificationDocument" className="col-sm-2.5 col-form-label">CPF</Label>
+                             <Label for="identificationDocument" className="col-sm-2.5 col-form-label">Documento de Identificação</Label>
                             <div className="col-sm-12">
-                             <Input type="text" className="form-control" name="identificationDocument" id="identificationDocument" placeholder="Digite o CPF"
+                             <Input required type="text" className="form-control" name="identificationDocument" id="identificationDocument" placeholder="Digite o CPF"
                                    onChange={handleChange} value={candidato.identificationDocument}/>
                             </div>
                         </div>
@@ -126,7 +135,7 @@ return(
                         <div className="form-group row">
                              <Label for="email" className="col-sm-2.5 col-form-label">E-mail</Label>
                              <div className="col-sm-12">
-                             <Input type="text" className="form-control" name="email" id="email" placeholder="Digite o e-mail"
+                             <Input required type="text" className="form-control" name="email" id="email" placeholder="Digite o e-mail"
                                   onChange={handleChange} value={candidato.email}/>
                             </div>
                         </div>
@@ -277,7 +286,7 @@ return(
                         <div className="form-group row">
                         <Label for="addressZipCode" className="col-sm-2.5 col-form-label">CEP</Label>
                         <div className="col-sm-12">
-                        <Input type="number" className="form-control" name="addressZipCode" id="addressZipCode" placeholder="Digite o CEP"
+                        <Input type="text" className="form-control" name="addressZipCode" id="addressZipCode" placeholder="Digite o CEP"
                             onChange={handleChange} value={candidato.addressZipCode} />
                         </div>
                         </div>
@@ -746,10 +755,12 @@ return(
 
                     <Row>                    
                     <Col>                  
-                    <input className="button-enviar" type="button" value="Enviar"
+                    <input className="button-enviar" type="submit"  value="Enviar" 
                     ></input> 
                     </Col>
                     </Row>
+
+
 
 
             </Form>
