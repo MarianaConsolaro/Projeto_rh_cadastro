@@ -1,9 +1,14 @@
-import { Form, Label, Input, FormGroup, FormText, Row, Col } from "reactstrap";
+import { Form, Label, Input, FormGroup, FormText, Row, Col, FormFeedback } from "reactstrap";
 import { useState } from "react";
 import Images from "./images";
 
-
 export default function Cadastro(){
+
+const [nomeInvalido, setNomeInvalido] = useState(false);
+const [sobrenomeInvalido, setSobrenomeInvalido] = useState(false);
+const [cpfInvalido, setCpfInvalido] = useState(false);
+const [emailInvalido, setEmailInvalido] = useState(false);
+
 
 const [candidato, setCandidato] = useState(
 {
@@ -42,9 +47,19 @@ const [candidato, setCandidato] = useState(
     area_interest:'',
     linkedinProfileUrl:''
   
-}
-);
+});
+
 function handleChange(event){
+
+        if(event.target.name === 'firstname') {
+                setNomeInvalido(false);
+        } else if(event.target.name === 'lastname') {
+                setSobrenomeInvalido(false);
+        }else if(event.target.name === 'identificationDocument'){
+                setCpfInvalido(false);
+        }else if(event.target.name === 'email'){
+                setEmailInvalido(false);
+        }
 
         const target = event.target;
         const value = target.value;
@@ -58,13 +73,21 @@ function handleChange(event){
    
  }
 
- async function handleSubmit(){
-
-        console.log(candidato);
-
-
+ function handleSubmit(event){
+        console.log('teste');
  }
 
+ function handleInvalido(event){
+        if(event.target.name === 'firstname') {
+                setNomeInvalido(true);
+        } else if(event.target.name === 'lastname') {
+                setSobrenomeInvalido(true);
+        } else if(event.target.name === 'identificationDocument') {
+                setCpfInvalido(true);
+        }else if(event.target.name === 'email') {
+                setEmailInvalido(true);
+        }
+ }
  
 return(
 
@@ -96,10 +119,9 @@ return(
                         <div className="form-group row">
                             <Label for="firstname" className="col-sm-2.5 col-form-label">Nome </Label>
                             <div className="col-sm-12">
-                            <Input required type="text" className="form-control" name="firstname" id="firstname" placeholder="Digite o primeiro nome"
-                                onChange={handleChange} value={candidato.firstname}/>
-                                
-                                <p></p>
+                            <Input required invalid={nomeInvalido} type="text" className="form-control" name="firstname" id="firstname" placeholder="Digite o primeiro nome"
+                                onChange={handleChange} value={candidato.firstname} onInvalid={handleInvalido} />
+                            <FormFeedback invalid>Campo obrigatório</FormFeedback>
                             </div>
                         </div>
                 </Col>
@@ -109,8 +131,9 @@ return(
                          <div className="form-group row">
                             <Label for="lastname" className="col-sm-2.5 col-form-label">Sobrenome </Label>
                              <div className="col-sm-12">
-                            <Input required type="text" className="form-control" name="lastname" id="lastname" placeholder="Digite o sobrenome"
-                                onChange={handleChange} value={candidato.lastname}/>
+                            <Input required invalid={sobrenomeInvalido} type="text" className="form-control" name="lastname" id="lastname" placeholder="Digite o sobrenome"
+                                onChange={handleChange} value={candidato.lastname} onInvalid={handleInvalido}/>
+                            <FormFeedback invalid>Campo obrigatório</FormFeedback>
                             </div>
                         </div>
                 </Col>
@@ -123,8 +146,9 @@ return(
                         <div className="form-group row">
                              <Label for="identificationDocument" className="col-sm-2.5 col-form-label">Documento de Identificação</Label>
                             <div className="col-sm-12">
-                             <Input required type="text" className="form-control" name="identificationDocument" id="identificationDocument" placeholder="Digite o CPF"
-                                   onChange={handleChange} value={candidato.identificationDocument}/>
+                             <Input required invalid={cpfInvalido} type="text" className="form-control" name="identificationDocument" id="identificationDocument" placeholder="Digite o CPF"
+                                   onChange={handleChange} value={candidato.identificationDocument} onInvalid={handleInvalido}/>
+                                   <FormFeedback invalid>Campo obrigatório</FormFeedback>
                             </div>
                         </div>
                 </Col>
@@ -135,12 +159,13 @@ return(
                         <div className="form-group row">
                              <Label for="email" className="col-sm-2.5 col-form-label">E-mail</Label>
                              <div className="col-sm-12">
-                             <Input required type="text" className="form-control" name="email" id="email" placeholder="Digite o e-mail"
-                                  onChange={handleChange} value={candidato.email}/>
+                             <Input required invalid={emailInvalido} type="text" className="form-control" name="email" id="email" placeholder="Digite o e-mail"
+                                  onChange={handleChange} value={candidato.email} onInvalid={handleInvalido}/>
+                                  <FormFeedback invalid>Campo obrigatório</FormFeedback>
                             </div>
                         </div>
 
-                </Col>  
+                </Col> 
                 </Row>
 
                  <br/>
@@ -162,7 +187,7 @@ return(
                 <Col>
                          <div className="form-group row">
                             <FormGroup tag="fieldset">                    
-                            <Label for="gender" className="col-sm-2 col-form-label">Gênero</Label>
+                            <Label for="gender" className="mb-3 col-form-label">Gênero</Label>
                 <Row>
                 <Col xs="auto">
                             <FormGroup check>
@@ -217,7 +242,7 @@ return(
                 <Col>
                          <div className="form-group row">
                             <FormGroup tag="fieldset">                    
-                            <Label for="disability" className="col-sm-2.5 col-form-label">Possui alguma deficiência?</Label>
+                            <Label for="disability" className="mb-3 col-form-label">Possui alguma deficiência?</Label>
                 <Row>
                 <Col xs="auto">
                             <FormGroup check>

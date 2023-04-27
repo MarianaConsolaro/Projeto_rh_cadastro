@@ -16,7 +16,7 @@ return(
    
         <br/>
 
-        <h5>Informe o CFP:</h5>
+        <h5>Informe o CPF:</h5>
 
         
         <body>
