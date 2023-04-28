@@ -11,23 +11,23 @@ import Home from './components/Home'
 
 
 function App() {
-  return (
-    <div className="App">  
-  
-
-      <Routes>
-      <Route path = "/Home" element = {<Home/>} /> 
-        <Route path = "/Cadastro" element = {<Cadastro/>} /> 
-        <Route path = "/listagemfiltro" element = {<ListagemFiltro/>} /> 
-        
-        
-       
+	return (
+		<div className="App">
 
 
-      </Routes>
+			<Routes>
+				<Route path="/Home" element={<Home />} />
+				<Route path="/Cadastro" element={<Cadastro />} />
+				<Route path="/listagemfiltro" element={<ListagemFiltro />} />
 
-    </div>
-  );
+
+
+
+
+			</Routes>
+
+		</div>
+	);
 }
 
 export default App;
