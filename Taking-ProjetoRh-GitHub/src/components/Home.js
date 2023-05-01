@@ -1,28 +1,35 @@
-import { Link, NavLink } from 'react-router-dom';
-import { Nav, Navbar, NavbarBrand, NavItem } from 'reactstrap';
-import Images from './images';
+import { Link} from 'react-router-dom';
+import { Nav, NavItem, NavLink, Navbar, NavbarBrand} from 'reactstrap';
 
 
-export default function Home() {
 
 
-	return (
-		<>
+export default function Home(){
 
-			<Navbar color="navbar navbar-dark bg-dark">
-				<NavbarBrand tag={Link} to="/Home">Home</NavbarBrand>
-				<NavbarBrand tag={Link} to="/Cadastro">Cadastro de currículo</NavbarBrand>
-				<NavbarBrand tag={Link} to="/RH">RH</NavbarBrand>
-				<Nav className="me-auto" navbar>
 
-				</Nav>
+    return( 
+        <>
+        <div>  
+           
+            <Navbar className="barborda">
+              
+                    <img  className='logtk' src="/TK.png" alt="Logo da taking" />  
+                <Nav className="me-auto" >
+                    <NavbarBrand  tag={Link} to="/">Home</NavbarBrand>
+                    <NavItem>
+                    <NavLink tag={Link} to="/Cadastro">Cadastro de currículo</NavLink>
+                    <NavLink tag={Link} to="/RH">Recursos Humanos</NavLink>
+                    </NavItem>
+                </Nav>
+                
+            </Navbar>
+        </div>
 
-			</Navbar>
+            <div>
+                <img className='TK' src="/LogoTK.png" alt='Imgem da taking'/>
 
-			<div>
-				<img className='TK' src="/LogoTK.png" alt='Imgem da taking' />
-			</div>
-		</>
-
-	);
+            </div>
+        </>
+        
+    );
 }

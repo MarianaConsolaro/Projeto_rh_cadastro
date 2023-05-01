@@ -91,7 +91,7 @@ export default function Cadastro() {
      
      async function handleSubmit(){
         try{
-        const response = await fetch('http://localhost:8080/'),
+        const response = await fetch('http://localhost:8080/candidato'),
 
      {
         method: 'POST',
@@ -330,8 +330,8 @@ export default function Cadastro() {
 								<Col>
 									<Label for="disability_type" className="col-sm-2.5 col-form-label">Qual deficiência possui?</Label>
 									<div className="col-sm-12">
-										<select className="custom-select deficiencia-opcao col-form-label " name="disability_type" onChange={handleChange}>
-											<option value="especifique a deficiencia">Especifique a deficiência</option>
+										<select className="custom-select-cad deficiencia-opcao-cadastro col-form-label " name="disability_type" onChange={handleChange}>
+											<option value="especifique a deficiencia"></option>
 											<option value="deficiencia visual">Deficiência visual </option>
 											<option value="deficiencia auditiva">Deficiência Auditiva</option>
 											<option value="deficiencia motora">Deficiência Motora </option>
@@ -360,8 +360,8 @@ export default function Cadastro() {
 
 									<Label className="col-sm-2.5 col-form-label" for="country">País</Label>
 									<div className="col-sm-12">
-										<select className="custom-select localizacao-opcao col-form-label" name="country" onChange={handleChange}>
-											<option value="todos">País</option>
+										<select className="custom-select-cad localizacao-opcao-cadastro col-form-label" name="country" onChange={handleChange}>
+											<option value="todos"></option>
 											<option value="brasil">Brasil</option>
 											<option value="USA">USA </option>
 											<option value="Canada">Canada </option>
@@ -391,8 +391,8 @@ export default function Cadastro() {
 
 									<Label className="col-sm-2.5 col-form-label" for="state">UF</Label>
 									<div className="col-sm-12">
-										<select className="custom-select localizacao-opcao col-form-label" name="state" onChange={handleChange}>
-											<option value="todos">UF</option>
+										<select className="custom-select-cad localizacao-opcao-cadastro col-form-label" name="state" onChange={handleChange}>
+											<option value="todos"></option>
 											<option value="SP">SP </option>
 											<option value="RJ">RJ </option>
 											<option value="MG">MG </option>
@@ -405,13 +405,12 @@ export default function Cadastro() {
 								<br />
 
 
-
 								<Col>
 
 									<Label className="col-sm-2.5 col-form-label" for="city">Cidade</Label>
 									<div className="col-sm-12">
-										<select className="custom-select localizacao-opcao col-form-label" name="city" onChange={handleChange}>
-											<option value="todos">Cidade</option>
+										<select className="custom-select-cad localizacao-opcao-cadastro col-form-label" name="city" onChange={handleChange}>
+											<option value="todos"></option>
 											<option value="Sao Paulo">São Paulo </option>
 											<option value="Rio de Janeiro">Rio de Janeiro </option>
 											<option value="Belo horizonte">Belo horizonte </option>
@@ -467,9 +466,9 @@ export default function Cadastro() {
 
 									<div className="form-group row">
 										<div className="col-sm-12">
-											<Label className="nivel-label" for="level">Nivel de Escolaridade</Label>
-											<select className="custom-select escolaridade-opcao col-form-label" name="level" onChange={handleChange}>
-												<option value="todos">Nível de Escolaridade</option>
+											<Label className="nivelescolaridade-label-cadastro" for="level">Nivel de Escolaridade</Label>
+											<select className="custom-select-cad escolaridade-opcao-cadastro col-form-label" name="level" onChange={handleChange}>
+												<option value="todos"></option>
 												<option value="ensino medio">Ensino Médio</option>
 												<option value="graduacao">Graduação</option>
 												<option value="pos graduacao">Pós Graduação </option>
@@ -487,8 +486,8 @@ export default function Cadastro() {
 									<div className="form-group row">
 										<div className="col-sm-12">
 											<Label className="area-label" for="formation">Área de Formação</Label>
-											<select className="custom-select escolaridade-opcao col-form-label" name="formation" onChange={handleChange}>
-												<option value="todos">Área de Formação</option>
+											<select className="custom-select-cad escolaridade-opcao-cadastro col-form-label" name="formation" onChange={handleChange}>
+												<option value="todos"></option>
 												<option value="tecnologia">Tecnologia</option>
 												<option value="adm">Administração</option>
 												<option value="rh">Recursos Humanos</option>
@@ -506,8 +505,8 @@ export default function Cadastro() {
 
 									<Label for="course" className="col-sm-2.5 col-form-label">Curso</Label>
 									<div className="col-sm-12">
-										<select className="custom-select escolaridade-opcao col-form-label" name="course" onChange={handleChange}>
-											<option value="todos">Curso</option>
+										<select className="custom-select-cad escolaridade-opcao-cadastro col-form-label" name="course" onChange={handleChange}>
+											<option value="todos"></option>
 											<option value="ads">Análise e Desenvolvimento de Sistemas</option>
 											<option value="ciencia de dados">Ciência de Dados</option>
 											<option value="ciencia da computacao">Ciência da Computação </option>
@@ -518,8 +517,8 @@ export default function Cadastro() {
 								<Col>
 
 									<Label className="instituicao-label" for="institution">Instituição de Ensino</Label>
-									<select className="custom-select escolaridade-opcao col-form-label" name="institution" onChange={handleChange}>
-										<option value="todos">Insitituição de Ensino</option>
+									<select className="custom-select-cad escolaridade-opcao-cadastro col-form-label" name="institution" onChange={handleChange}>
+										<option value="todos"></option>
 										<option value="usp">Universidade de São Paulo</option>
 										<option value="unicamp">Universidade Estadual de Campinas</option>
 										<option value="ufrj">Universidade Estadual do Rio de Janeiro</option>
@@ -536,8 +535,8 @@ export default function Cadastro() {
 
 									<Label for="status" className="col-sm-2.5 col-form-label" >Status</Label>
 									<div className="col-sm-12">
-										<select className="custom-select status-opcao col-form-label" name="status" onChange={handleChange}>
-											<option value="todos">Status</option>
+										<select className="custom-select-cad status-opcao-cadastro col-form-label" name="status" onChange={handleChange}>
+											<option value="todos"></option>
 											<option value="concluído">Concluído</option>
 											<option value="andamento">Em andamento</option>
 										</select>
@@ -598,8 +597,8 @@ export default function Cadastro() {
 									<div className="form-group row">
 										<div className="col-sm-11">
 											<div className="form-group row">
-												<Label className="idiomas-label" for="languages">Idioma</Label>
-												<select className="custom-select idiomas-opcao col-form-label" name="languages" onChange={handleChange}>
+												<Label className="idiomas-label-cadastro" for="languages">Idioma</Label>
+												<select className="custom-select-cad idiomas-opcao-cadastro col-form-label" name="languages" onChange={handleChange}>
 													<option value=""></option>
 													<option value="ingles">Inglês</option>
 													<option value="espanhol">Espanhol </option>
@@ -620,8 +619,8 @@ export default function Cadastro() {
 									<div className="form-group row">
 										<div className="col-sm-12">
 											<div className="form-group row"></div>
-											<Label className="nivel-label" for="languages_skill">Nível de Fluência</Label>
-											<select className="custom-select idiomas-opcao col-form-label" name="languages_skill" onChange={handleChange}>
+											<Label className="nivel-label-cadastro" for="languages_skill">Nível de Fluência</Label>
+											<select className="custom-select-cad idiomas-opcao-cadastro col-form-label" name="languages_skill" onChange={handleChange}>
 												<option value=""></option>
 												<option value="basico">Básico</option>
 												<option value="intermediario">Intermediário</option>
@@ -772,12 +771,12 @@ export default function Cadastro() {
 								<Col>
 									<div className="form-group row">
 										<div className="col-sm-20">
-											<div className="form-group row">
+											
 												<Input type="text" name="linkedinProfileUrl" id="linkedinProfileUrl" placeholder="www.linkedin.com.br/"
 													onChange={handleChange} value={candidato.linkedinProfileUrl} />
 											</div>
 										</div>
-									</div>
+									
 								</Col>
 							</Row>
 
@@ -791,8 +790,7 @@ export default function Cadastro() {
 							<br />
 
 							<Row>
-								<div className="form-group row">
-									<div className="col-sm-20">
+								<div className="form-group row">         
 										<div className="form-group row">
 											<Label for="Upload" className="col-sm-2 col-form-label"></Label>
 											<Input type="file" name="upload" id="Upload" />
@@ -801,7 +799,6 @@ export default function Cadastro() {
 											</FormText>
 										</div>
 									</div>
-								</div>
 							</Row>
 
 							<br />
