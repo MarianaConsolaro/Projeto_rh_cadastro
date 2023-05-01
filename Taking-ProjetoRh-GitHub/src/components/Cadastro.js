@@ -10,6 +10,14 @@ export default function Cadastro() {
 	const [emailInvalido, setEmailInvalido] = useState(false);
 
 
+   {/* referente as msgs de erro do Submit
+   
+    const [showErrorAlert, setShowErrorAlert] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
+
+    */}
+
+
 	const [candidato, setCandidato] = useState(
 		{
 			firstname: '',
@@ -74,9 +82,56 @@ export default function Cadastro() {
 	}
 
 	function handleSubmit(event) {
-		event.preventDefault();
+		event.preventDefault(); 
 		console.log(candidato);
 	}
+
+
+     {/* Integração com o back end através do Submit
+     
+     async function handleSubmit(){
+        try{
+        const response = await fetch('http://localhost:8080/'),
+
+     {
+        method: 'POST',
+         headers:{
+             'Accept': 'application/json',
+             'Content-Type': 'application/json'
+         },
+         body: JSON.stringify(candidato)
+     }
+
+    )
+    
+    if(response.ok){
+        //exibe a msg de sucesso
+        
+    }else {
+
+       const msgErro = await response.text();
+       throw new Error(msgErro);
+    }
+
+   }  catch(e){
+              
+        //TODO: remover
+         console.log('Error Message: ' + e.message);
+  
+         //TODO: exibir a mensagem de erro na tela para o usuário.
+          setShowErrorAlert(true);
+          setErrorMessage(e.message);
+   }
+
+  }
+
+  function toggleAlert(){
+    setShowErrorAlert(false);
+    setErrorMessage('');
+  }
+
+    */}
+
 
 	function handleInvalido(event) {
 		if (event.target.name === 'firstname') {
@@ -109,6 +164,14 @@ export default function Cadastro() {
 					<br />
 
 					<body>
+
+                {/* Corresponde a msg de erro
+
+                    <Alert color="danger" isOpen={showErrorAlert} toggle={toggleAlert}>
+                   {errorMessage}
+                    </Alert>
+                */}
+
 
 						<h4>Dados Pessoais</h4>
 						<br />
