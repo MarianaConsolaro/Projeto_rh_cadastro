@@ -21,7 +21,7 @@ export default function Home() {
                         </Nav>
 
                          <Nav className='texto-dois' navbar>
-				            <NavbarBrand tag={Link} to="/Cadastro">Cadastro de currículo</NavbarBrand>
+				            <NavbarBrand tag={Link} to="/Cadastro">Cadastro de Currículo</NavbarBrand>
                         </Nav>
                         
 
