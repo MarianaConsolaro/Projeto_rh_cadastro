@@ -1,5 +1,5 @@
 // import Images from "./images";
-import { Form, Label, Input, Row, Col } from "reactstrap";
+import { Form, Label, Input} from "reactstrap";
 import BarraMenu from "./barramenu";
 import Curriculo from "./curriculo";
 import { useState } from "react";
@@ -14,7 +14,8 @@ return(
        
     <BarraMenu/>
     
-    <body>
+    
+    <div className="body">
     <div>
     
         <h4>CONSULTA DE CURRÍCULOS</h4>
@@ -24,7 +25,7 @@ return(
         <h5>Informe o CPF:</h5>
 
         
-        <body>
+        <div className="div-form">
                
         <Form>    
        
@@ -41,19 +42,19 @@ return(
 
         </Form>  
     
-        </body>
+        </div>
 
     </div>         
-    </body>
+    </div>
          <hr class= "largura-linha"/>
          
     {showFields && <> <Curriculo/>
 
-    <body>    
+    <div>    
         <Form>
         <input class="button-editar" type="button" value="Editar"></input> 
         </Form>
-    </body>
+    </div>
     </>
 }
 

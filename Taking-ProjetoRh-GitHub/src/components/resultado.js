@@ -12,7 +12,7 @@ function MyVerticallyCenteredModal(props) {
   return (
     <Modal
       {...props}
-      size="xl"
+      size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
@@ -98,13 +98,6 @@ export default function Resultado() {
                       show={modalShowRemove}
                       onHide={() => setModalShowRemove(false)}
                     />
-                    {/* <input
-                      class="button-remover"
-                      type="button"
-                      s
-                      value="Remover"
-                      onClick={() => setModalShowRemove(true)}
-                    /> */}
                   </ButtonGroup>
                 </td>
               </tr>

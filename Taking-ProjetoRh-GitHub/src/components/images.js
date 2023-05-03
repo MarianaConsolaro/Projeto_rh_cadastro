@@ -3,7 +3,7 @@ const Images = () => {
 		<div>
 			<center>
 				<img src="/logotaking.png" alt="logo"/>
-				<hr className="primeiraQuebraDeLinha" />
+				{ /* <hr className="primeiraQuebraDeLinha" /> */}
 			</center>
 		</div>
 

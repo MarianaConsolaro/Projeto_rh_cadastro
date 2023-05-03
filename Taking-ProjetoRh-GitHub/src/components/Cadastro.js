@@ -1,6 +1,7 @@
 import { Form, Label, Input, FormGroup, FormText, Row, Col, FormFeedback } from "reactstrap";
 import { useState } from "react";
 import Images from "./images";
+import MenuBar from './MenuBar';
 
 export default function Cadastro() {
 
@@ -8,6 +9,8 @@ export default function Cadastro() {
 	const [sobrenomeInvalido, setSobrenomeInvalido] = useState(false);
 	const [cpfInvalido, setCpfInvalido] = useState(false);
 	const [emailInvalido, setEmailInvalido] = useState(false);
+
+    const [showFields, setShowFields] = useState(false);
 
 
    {/* referente as msgs de erro do Submit
@@ -146,14 +149,14 @@ export default function Cadastro() {
 	}
 
 	return (
-
-
 		<>
 
+        <MenuBar />
+    
 			<Images />
 
-
-			<body>
+            <div className="body">
+            
 				<div>
 
 					<center>
@@ -163,7 +166,7 @@ export default function Cadastro() {
 
 					<br />
 
-					<body>
+                    <div className="div-form">
 
                 {/* Corresponde a msg de erro
 
@@ -811,15 +814,11 @@ export default function Cadastro() {
 								</Col>
 							</Row>
 
-
-
-
 						</Form>
-
-					</body>
+                        </div>	
 				</div>
-			</body>
-
+			
+        </div>
 
 
 

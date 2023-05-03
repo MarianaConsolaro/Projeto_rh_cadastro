@@ -12,7 +12,8 @@ return(
     
     <BarraMenu/>
 
-    <body>
+    <div className="body">
+
     <div>
 
         <h4>CONSULTA  DE CURRÍCULOS  NO BANCO DE DADOS</h4>
@@ -22,7 +23,7 @@ return(
         <h5>Pesquisa básica:</h5>
          
        
-        <body>
+        <div className="div-form">
         <Form>
 
             <div class="form-group row">
@@ -97,20 +98,20 @@ return(
              
             
         </Form>
-          
-        </body>
+
         </div>
-        </body>
+          
+        </div>
 
 
         <hr class= "largura-linha"/>
 
-    <body>
+    
       <div>
 
         <h5>Pesquisa avançada:</h5>
 
-        <body>
+        <div className="div-form">
         <Form>
 
             <div class="form-group row">
@@ -233,10 +234,10 @@ return(
             <input class="button-pesquisa" type="button" value="Pesquisar" onClick={Resultado}></input>
         </Form>
         
-        </body>
+        </div>
      </div>
         
-     </body>
+     </div>
     
 
     </>
