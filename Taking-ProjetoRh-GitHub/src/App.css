@@ -368,6 +368,7 @@
 
   .barborda {
     background-color: white;
+    
    
  }
  
@@ -384,7 +385,7 @@
  .texto-um {
      color: #000000;
      display: absolute;
-     margin-right: 70px;
+     margin-right: 18px;
      flex-direction: row;
      align-items: right;
      justify-content: center;
@@ -396,7 +397,7 @@
  .texto-dois {
     color: #000000;
     display: absolute;
-    margin-right: 210px;
+    margin-right: 20px;
     align-items: right;
     justify-content: center;
     padding: 5px;
@@ -408,7 +409,7 @@
     color: #000000;
     display: absolute;
     flex-direction: row;
-    margin-right: 185px;
+    margin-right: 20px;
     align-items: right;
     justify-content: center;
     padding: 5px;
