@@ -24,11 +24,13 @@ export default function Home() {
 				            <NavbarBrand tag={Link} to="/Cadastro">Cadastro de Currículo</NavbarBrand>
                         </Nav>
                         
-
                         <Nav className='texto-tres' navbar>
-                            <NavbarBrand tag={Link} to="/pesquisa">Recursos Humanos</NavbarBrand> 
+                            <NavbarBrand tag={Link} to="/listagemfiltro">Busca de Currículo</NavbarBrand> 
                         </Nav>
 			           
+                        <Nav className='texto-quatro' navbar>
+                            <NavbarBrand tag={Link} to="/pesquisa">Recursos Humanos</NavbarBrand> 
+                        </Nav>
                        
 			    </Navbar>
 
