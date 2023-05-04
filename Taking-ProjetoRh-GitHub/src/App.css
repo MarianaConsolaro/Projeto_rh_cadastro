@@ -12,10 +12,6 @@
   
   }
   
-  
-
-  
-  
   .bg-light {
   
     border: 2px solid #000000;
@@ -269,9 +265,6 @@
   .status-label-cadastro{
     margin-inline: 5%;
   }
-
- 
-  
   
   .pais-label-cadastro{
   
@@ -318,15 +311,12 @@
     margin-inline: 11%;
   }
   
-  
-  
   .botao-link{
   
   text-decoration: none; 
   color: #474747;
   
   }
-  
   
   .custom-select-listagem{
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
@@ -438,7 +428,6 @@
   font-size: large
 }
 
-
   .custom-select-cad{
     width: 523px;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
@@ -452,5 +441,9 @@
     margin-left: 0%;
    }
 
+  .editar-filtro{
+
+    color: #777777;
+  }
 
 

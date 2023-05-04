@@ -52,7 +52,7 @@ return(
     </div>         
     </div>
          <hr class= "largura-linha"/>
-         
+          <div className="div-form">
     {showFields && <> <Curriculo/>
 
     <div>    
@@ -62,9 +62,8 @@ return(
     </div>
     </>
 }
-
-
-    
+</div>
 
     </>
+    
 )}

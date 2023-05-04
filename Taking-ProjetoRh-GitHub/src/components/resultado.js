@@ -1,7 +1,6 @@
-import { Button, ButtonGroup, Table } from "reactstrap";
+import { ButtonGroup, Nav, NavbarBrand, Table } from "reactstrap";
 import BarraMenu from "./barramenu";
-import { Link } from "react-router-dom";
-import Arrow1 from "./Imagens/Arrow1.png";
+import { Link} from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Curriculo from "./curriculo";
@@ -12,7 +11,7 @@ function MyVerticallyCenteredModal(props) {
   return (
     <Modal
       {...props}
-      size="lg"
+      size="xl"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
@@ -56,13 +55,11 @@ export default function Resultado() {
       <br />
       <br />
       <div class="result">
-        <h6>Exibindo resultados</h6>
-        <Button color="link" tag={Link} to="/pesquisa">
-          <img src={Arrow1} alt="flecha" width="18" height="11" /> Editar
-          filtros
-        </Button>
-        {""}
-
+        <h5>Exibindo resultados</h5>
+        
+        <Nav className='editar-filtro' navbar>
+        <NavbarBrand tag={Link} to="/pesquisa">Editar filtros</NavbarBrand> 
+        </Nav>
         <br />
         <br />
       </div>

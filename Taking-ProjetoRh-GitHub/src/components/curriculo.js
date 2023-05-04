@@ -54,7 +54,7 @@ export default function Curriculo() {
   return (
     <>
       <div className="body">
-      <div className="div-form">
+      
           <h6>Dados Pessoais</h6>
           <br />
 
@@ -857,7 +857,7 @@ export default function Curriculo() {
             </Row>
           </Form>
         </div>
-      </div>
+     
     </>
   );
 }

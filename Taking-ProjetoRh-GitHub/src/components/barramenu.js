@@ -1,28 +1,18 @@
-      import Navbar from 'react-bootstrap/Navbar';
-      import './BarraMenu.css';
-      import taking from './Imagens/taking.jpg';
-
+import {  Navbar} from 'reactstrap';
+import './BarraMenu.css';
+     
       
       function BarraMenu() {
         return (
           <>
-         
-            <Navbar className="justify-content-center" bg="white">
-              
-                <Navbar.Brand href="#">
-                  <img src = {taking}
-                   alt = "logo"
-                   width="64"
-                   height="36"
-                
-                  />
-                </Navbar.Brand>
-                
-              
-            </Navbar>
-            </>
-        );
-      }
-      
-      export default BarraMenu;
+            <div>
+			    <Navbar className="barborda" class= "navbar">
 
+                    <img  className='logtk' src="/TK.png" alt="Logo da taking" /> 
+                    </Navbar>
+
+</div>
+</>
+        ); 
+        }
+      export default BarraMenu;

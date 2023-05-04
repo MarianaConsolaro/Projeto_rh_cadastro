@@ -7,14 +7,3 @@
   
   }
 
-.navbar-header {
-    float: left;
-    padding: 3px; 
-    text-align: center;
-    width: 100%;
-}
-
-.navbar-brand {
-    position: absolute;
-    float: none;
-}
